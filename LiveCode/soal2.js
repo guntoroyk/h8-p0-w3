@@ -29,7 +29,7 @@ var panjangPakaian = 12; // silahkan beri nilai bebas
 
 if (jenisPakaian !== '' && jenisPakaian !== undefined) {
    if (pakaianPerluDisetrika === true) {
-      if ((jenisPakaian === 'baju' || 'celana') && panjangPakaian > 20) {
+      if ((jenisPakaian === 'baju' || jenisPakaian === 'celana') && panjangPakaian > 20) {
          console.log("Pakaian sudah disetrika dan dilipat, Terima Kasih");
       } else {
          console.log('Pakaian sudah disetrika, Terima Kasih');

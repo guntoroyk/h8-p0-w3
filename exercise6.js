@@ -9,23 +9,40 @@
 *   
 */
 
+// function angkaPalindrome(num) {
+//     // you can only write your code here!
+//     var palindromNum = -1;
+//     var palindrome = false;
+//     while (palindrome !== true) {
+//         num++
+//         var strNum = String(num);
+//         var reverseStrNum = '';
+//         for (var j = strNum.length - 1; j >= 0; j--) {
+//             reverseStrNum += strNum[j];
+//         }
+//         if (reverseStrNum === strNum) {
+//             palindromNum = Number(reverseStrNum);
+//             palindrome = true;
+//         }
+//     }
+//     return palindromNum;
+//   }
+
 function angkaPalindrome(num) {
     // you can only write your code here!
-    var reverseNum = -1;
-    var palindrome = false;
-    while (palindrome !== true) {
+    while (true) {
         num++
         var strNum = String(num);
         var reverseStrNum = '';
+        
         for (var j = strNum.length - 1; j >= 0; j--) {
             reverseStrNum += strNum[j];
         }
+
         if (reverseStrNum === strNum) {
-            reverseNum = Number(reverseStrNum);
-            palindrome = true;
+            return Number(reverseStrNum);
         }
     }
-    return reverseNum;
   }
   
   // TEST CASES

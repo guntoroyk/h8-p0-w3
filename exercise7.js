@@ -6,7 +6,10 @@ function hitungJumlahKata(kalimat) {
             jmlKata += 1;
         }
     }
-    return jmlKata+1;
+    if (kalimat !== '') {
+        return jmlKata + 1;
+    }
+    return jmlKata;
   }
   
   // TEST CASES
@@ -15,3 +18,4 @@ function hitungJumlahKata(kalimat) {
   console.log(hitungJumlahKata('A song to sing')); // 4
   console.log(hitungJumlahKata('I')); // 1
   console.log(hitungJumlahKata('I believe I can code')); // 5
+  console.log(hitungJumlahKata('')); // 0

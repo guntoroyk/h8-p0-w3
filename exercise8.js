@@ -1,16 +1,17 @@
 function pasanganTerbesar(num) {
     // you can only write your code here!
-    var strNum = String(num);
-    var arrStrNum = strNum.split('')
-    var joinArrStrNum = arrStrNum.join();
+    var str = String(num);
+    var terbesar = 0;
+    var pasangan = '';
 
-    for (var i = 0; i < arrStrNum.length; i++) {
-       var jml = 0;
-       
+    for (let i = 0; i < str.length; i++) {
+      pasangan = str[i] + str[i+1];
+
+      if (Number(pasangan) > terbesar) {
+        terbesar = Number(pasangan);
+      }
     }
-
-    return typeof joinArrStrNum;
-
+    return terbesar;
   }
   
   // TEST CASES
